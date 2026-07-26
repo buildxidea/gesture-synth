@@ -2,6 +2,11 @@
 
 A camera-based musical instrument that lets you control chords, tone, and expression using hand gestures.
 
+## Demo
+
+🎥 Watch the Gesture Synth tutorial on Instagram:
+https://www.instagram.com/p/DbH1BACxNCG/
+
 ## Features
 - Left hand controls chord selection
 - Right hand controls voicing and expression

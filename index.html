@@ -122,7 +122,7 @@ html, body {
   left: 50%;
   transform: translateX(-50%);
   color: #e8a13d;
-  font-size: 12px;
+  font-size: 42px;
   font-family: monospace;
   font-weight: bold;
   text-shadow: 0 0 12px rgba(232, 161, 61, 0.6);
@@ -174,14 +174,12 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* FIXED: Push content to the bottom third of the screen */
-  justify-content: flex-end; 
-  /* FIXED: Pad the bottom by 15% of the screen height to position it vertically */
-  padding-bottom: 15vh; 
+  justify-content: flex-end;
+  padding-bottom: 10vh;
   gap: 16px;
   cursor: pointer;
   z-index: 10;
-  box-sizing: border-box; /* Ensures the padding calculation doesn't stretch the container */
+  box-sizing: border-box;
 }
 
 .start-circle {
@@ -201,6 +199,7 @@ html, body {
   font-family: monospace;
   font-size: 16px;
   letter-spacing: 0.05em;
+  text-align: center;
 }
 
 #overlay.dimmed {
@@ -252,6 +251,14 @@ html, body {
       <button id="closeHelp">✕</button>
 
       <h2>Gesture Synth Guide</h2>
+      <p>
+      Gesture Synth is an interactive musical instrument created by <a href="https://indecisiveeric.com">
+      Eric Wei</a>.
+      Use your hands to create chords, melodies, and sounds in real-time!
+      
+      </p>
+
+      
 
       <h3>Left Hand</h3>
       <p><b>Tilt</b><br>
@@ -286,15 +293,21 @@ html, body {
       Higher → Louder<br>
       Lower → Softer</p>
 
-      <a href="https://www.instagram.com/p/DbH1BACxNCG/" target="_blank" rel="noopener noreferrer">
-        📹 Watch Video Tutorial on Instagram!
+      <a href="..." target="_blank" rel="noopener noreferrer">
+        📹 Gesture Synth tutorial by Eric Wei on Instagram
       </a>
+
     </div>
   </div>
 
   <div id="startOverlay">
     <div class="start-circle">▶</div>
-    <div class="start-text">Click to enable audio</div>
+    <div class="start-text">
+    click to enable audio
+    <br>
+    <br>
+    <small>Created by Eric Wei 🙌</small>
+  </div>
   </div>
 </div>
 <script type="module" src="/main.js"></script>
